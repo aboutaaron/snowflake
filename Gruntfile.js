@@ -310,7 +310,8 @@ module.exports = function (grunt) {
             server: [
                 'compass',
                 'coffee:dist',
-                'copy:styles'
+                'copy:styles',
+                'compile-handlebars'
             ],
             test: [
                 'coffee',
@@ -324,6 +325,15 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        'compile-handlebars': {
+            dynamicTemplate: {
+              template: 'app/templates/snowflake.handlebars',
+              templateData: {
+                "content": "Hello Luke."
+              },
+              output: 'app/index.html'
+            },
         }
     });
 
