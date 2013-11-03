@@ -12,6 +12,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $('.cover').backstretch('/images/cover.jpg');
+    $('.cover').backstretch('https://s3.amazonaws.com/media.apps.cironline.org/misc/cover.jpg');
     $('.page-header').find('h1').fitText(1.2);
 });
