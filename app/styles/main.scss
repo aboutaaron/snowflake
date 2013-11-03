@@ -47,6 +47,15 @@ body {
     min-height: 300px;
 }
 
+.cover-text {
+    background-color: #222;
+    opacity: 0.7;
+
+    .page-header {
+        color: white;
+    }
+}
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
     margin-top: 0;
