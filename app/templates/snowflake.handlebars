@@ -37,7 +37,7 @@
             <header class="page-header">
                 <h1>{{ title }}</h1>
                 <p class="lead">{{ excerpt }}</p>
-                <small>{{ author.id }}</small>
+                <small>{{ custom_fields.largo_byline_text }}</small>
             </header>
 
             <div class="row marketing">
@@ -74,10 +74,6 @@
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
-        <!-- endbuild -->
-
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
         <script src="bower_components/sass-bootstrap/js/alert.js"></script>
@@ -91,6 +87,8 @@
         <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
         <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+
+        <script src="bower_components/jquery.haircut.js/src/jquery.haircut.js"></script>
         <!-- endbuild -->
 </body>
 </html>
