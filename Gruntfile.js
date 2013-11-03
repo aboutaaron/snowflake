@@ -333,10 +333,10 @@ module.exports = function (grunt) {
         },
         'compile-handlebars': {
             build: {
-              //helpers: 'app/scripts/helpers.js',
-              template: 'app/templates/snowflake.handlebars',
-              templateData: 'app/json/article.json',
-              output: 'app/index.html'
+                //helpers: 'app/scripts/helpers.js',
+                template: 'app/templates/snowflake.handlebars',
+                templateData: 'app/json/article.json',
+                output: 'app/index.html'
             },
         }
     });
