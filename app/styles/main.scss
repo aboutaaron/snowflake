@@ -14,9 +14,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     font-family: "chaparral-pro", Georgia, serif;
     font-size: 16px;
-    padding-top: 20px;
+    //padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 40px;
+    //margin-top: 40px;
 }
 
 #article {
@@ -50,12 +50,40 @@ body {
             box-shadow: 0 8px 6px -6px #eee;
 }
 
+.pimp-nav .navbar-toggle .icon-bar {
+    background-color: #222;
+}
+
 .navbar-brand {
     color: #222;
+    font-size: 23px;
 
     &:hover {
         color: lighten(#222, 10%);
     }
+}
+
+.navbar-nav > li > a {
+    color: #222;
+}
+
+.nav-right {
+    li {
+        display: inline-block;
+        float: right;
+
+        button {
+            margin-top: 10px;
+        }
+    }
+}
+
+.nav-right > li > .btn-danger {
+    color: white;
+}
+
+.nav-right li > span {
+    margin-top: 10px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -79,7 +107,7 @@ body {
     background-color: #222;
     opacity: 0.8;
     position: relative;
-    top: 215px;
+    top: 282px;
     text-align: center;
 
     .page-header {
@@ -91,6 +119,7 @@ body {
 
         > .lead {
             font-family: 'Helvetica Neue', 'Helvetica', 'sans-serif';
+            font-weight: 100;
         }
     }
 }
