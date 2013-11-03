@@ -16,12 +16,18 @@ body {
     font-size: 16px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 40px;
 }
 
 #article p {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
+}
+
+.pimp-nav {
+    background-color: white;
+    border-bottom: 1px solid lighten(#222, 50%);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

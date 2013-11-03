@@ -5,7 +5,9 @@
     "sass-bootstrap": "~3.0.0",
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
-    "jquery.haircut.js": "git@github.com:layervault/jquery.haircut.js.git"
+    "jquery.haircut.js": "git@github.com:layervault/jquery.haircut.js.git",
+    "FitText.js": "git@github.com:davatron5000/FitText.js.git",
+    "jquery-backstretch": "~2.0.4"
   },
   "devDependencies": {}
 }
