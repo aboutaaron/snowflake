@@ -46,6 +46,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/*.html',
                     '.tmp/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '<%= yeoman.app %>/templates/*.handlebars',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
@@ -328,10 +329,9 @@ module.exports = function (grunt) {
         },
         'compile-handlebars': {
             dynamicTemplate: {
+              //helpers: 'app/scripts/helpers.js',
               template: 'app/templates/snowflake.handlebars',
-              templateData: {
-                "content": "Hello Luke."
-              },
+              templateData: 'app/json/article.json',
               output: 'app/index.html'
             },
         }
