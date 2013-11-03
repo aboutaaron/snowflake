@@ -2,7 +2,8 @@ jQuery(document).ready(function($) {
 	$.getJSON('/json/article.json').then(function (response) {
 		// body
 	  $('#article').html(response.post.content).val();
-
+	  $('#article').find('p:first').lettering('words');
+	  $('.word1').lettering();
 	  //$('.cover').backstretch(response.post.custom_fields.cover_image_url);
 	});
 

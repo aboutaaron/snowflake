@@ -7,7 +7,8 @@
     "jquery": "~1.10.2",
     "jquery.haircut.js": "git@github.com:layervault/jquery.haircut.js.git",
     "FitText.js": "git@github.com:davatron5000/FitText.js.git",
-    "jquery-backstretch": "~2.0.4"
+    "jquery-backstretch": "~2.0.4",
+    "Lettering.js": "git@github.com:davatron5000/Lettering.js.git#~0.6.1"
   },
   "devDependencies": {}
 }

@@ -19,13 +19,30 @@ body {
     margin-top: 40px;
 }
 
+#article {
+    margin-top: 20px;
+}
+
 #article p {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
 }
 
+#article p:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+// Lettering
+.char1 {
+    //font-size: 100px;
+    //position: relative;
+    //top: 45px;
+}
+
 .pimp-nav {
+    font-family: 'Helvetica Neue', 'Helvetica', 'sans-serif';
     background-color: white;
     border-bottom: 1px solid lighter(#222, 50%);
     -webkit-box-shadow: 0 8px 6px -6px #eee;
@@ -60,12 +77,21 @@ body {
 
 .cover-text {
     background-color: #222;
-    opacity: 0.7;
+    opacity: 0.8;
     position: relative;
-    top: 200px;
+    top: 215px;
+    text-align: center;
 
     .page-header {
         color: white;
+
+        > h1 {
+            font-family: "chaparral-pro", Georgia, serif;
+        }
+
+        > .lead {
+            font-family: 'Helvetica Neue', 'Helvetica', 'sans-serif';
+        }
     }
 }
 
