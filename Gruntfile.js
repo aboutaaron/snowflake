@@ -38,6 +38,10 @@ module.exports = function (grunt) {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
                 tasks: ['copy:styles', 'autoprefixer']
             },
+            'compile-handlebars': {
+                files: ['<%= yeoman.app %>/templates/{,*/}*.handlebars'],
+                tasks: ['compile-handlebars:build']
+            },
             livereload: {
                 options: {
                     livereload: '<%= connect.options.livereload %>'
@@ -328,7 +332,7 @@ module.exports = function (grunt) {
             ]
         },
         'compile-handlebars': {
-            dynamicTemplate: {
+            build: {
               //helpers: 'app/scripts/helpers.js',
               template: 'app/templates/snowflake.handlebars',
               templateData: 'app/json/article.json',
