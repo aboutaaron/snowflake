@@ -44,13 +44,18 @@
             </nav>
           </div>
         </header>
-        <div class="container">
-            <header class="page-header">
-                <h1>{{ title }}</h1>
-                <p class="lead">{{ excerpt }}</p>
-                <small>{{ custom_fields.largo_byline_text }}</small>
-            </header>
-
+        <div class="cover">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <header class="page-header">
+                        <h1>{{ title }}</h1>
+                        <p class="lead">{{ custom_fields.subhed }}</p>
+                        <small>{{ custom_fields.largo_byline_text }}</small>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <section class="container">
             <div class="row marketing">
                 <div id="article" class="col-lg-8 col-lg-offset-2">
                     {{ content }}
@@ -61,7 +66,7 @@
                 <p>♥ from the Yeoman team</p>
             </div>
 
-        </div>
+        </section>
         {{/with}}
 
 
@@ -100,6 +105,7 @@
         <script src="bower_components/sass-bootstrap/js/tab.js"></script>
 
         <script src="bower_components/jquery.haircut.js/src/jquery.haircut.js"></script>
+        <script src="bower_components/jquery-backstretch/jquery.backstretch.js"></script>
         <!-- endbuild -->
 </body>
 </html>
