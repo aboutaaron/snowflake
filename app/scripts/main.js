@@ -7,4 +7,5 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.cover').backstretch('/images/cover.jpg');
+	$('.page-header').find('h1').fitText(0.8);
 });

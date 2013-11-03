@@ -28,6 +28,9 @@ body {
 .pimp-nav {
     background-color: white;
     border-bottom: 1px solid lighter(#222, 50%);
+    -webkit-box-shadow: 0 8px 6px -6px #eee;
+       -moz-box-shadow: 0 8px 6px -6px #eee;
+            box-shadow: 0 8px 6px -6px #eee;
 }
 
 .navbar-brand {
