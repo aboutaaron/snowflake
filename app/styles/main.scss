@@ -27,7 +27,15 @@ body {
 
 .pimp-nav {
     background-color: white;
-    border-bottom: 1px solid lighten(#222, 50%);
+    border-bottom: 1px solid lighter(#222, 50%);
+}
+
+.navbar-brand {
+    color: #222;
+
+    &:hover {
+        color: lighten(#222, 10%);
+    }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

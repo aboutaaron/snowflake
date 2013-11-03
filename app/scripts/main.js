@@ -3,6 +3,8 @@ jQuery(document).ready(function($) {
 		// body
 	  $('#article').html(response.post.content).val();
 
-	  $('.cover').backstretch(response.post.custom_fields.cover_image_url);
+	  //$('.cover').backstretch(response.post.custom_fields.cover_image_url);
 	});
+
+	$('.cover').backstretch('/images/cover.jpg');
 });
