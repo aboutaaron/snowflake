@@ -1,7 +1,7 @@
 'use strict';
 
 jQuery(document).ready(function($) {
-    $.getJSON('/json/article.json').then(function (response) {
+    $.getJSON('https://s3.amazonaws.com/media.apps.cironline.org/misc/article.json').then(function (response) {
         // body
         $('#article').html(response.post.content).val();
         $('#article').find('p:first').lettering('words');
